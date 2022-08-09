@@ -1,0 +1,88 @@
+*pourqoui on teste ?
+
++securité des personnes
++retour des prod
++notoriété,image
++cout eleve des bugs
+=> nécéssité de vérifier les logiciels.
+------------------------------------------------------------------------------------------
+*c'est quoi tester:
+-tester c'est exécuter le prog afin de trv des anaomalies et des défauts.
+
+*objectifs des tests:
+
+-reduire les risques d'app des anomalies
+-trv anomalies et defauts
+-se conformer aux exigences contractuelles
+                                  !!!!!  n'a pas pour obj de  !!!!!
+-corriger le défaut
+-prv la bonne exe d'un prog.
+-----------------------------------------------------------------------------------------
+*contribution des test au succés
+
++revues d'exigence: detec les def dans les prod d'act
++concep : identifier les test précocement|reduire nb des défauts
++dev: assurer une meilleure compréhension du code
++avant sa sortie: detec les défaillances
+
+*assurer qualité.
+-----------------------------------------------------------------------------------------
+.anomalie: comportement inattendu. c'est  la manifest concrete du défaut
+.bug: résultat d'une eurreur
+-----------------------------------------------------------------------------------------
+*tester vs éboguer
+les testeurs test -> une act de detecter des anomalies
+les dev déboguent-> une act de dev permet de analyser,trv,supp les causes
+de défaillance
+
+-------------------------------------------------------------------------------------------
+*les 7 principes de test:
+
+1- les test prouvent la présence des défauts et non pas leurs absences
+2-les testes exhaustifs sont impossibles
+3-tester tot economise temps et l'argent
+4-regroupement des defauts
+5-paradoxe de pesticides
+6-test dépend de contexte
+7-l'absence des eurreures est une illusion.
+----------------------------------------------------------------------------------------
++processus de test: n'est pas unique = l'ensemble des act de test
+
++un test est influencé par:
+-modele de cycle de vie de dev
+-nv de test et les types de test
+-contraintes opérationnelle (budgets et src,délai,..)
+
++test se compose des prinp groupes d'activités:
+
+.plann de test: spec tech et taches|produire calendrier
+.suivi et ctrl: comp reg de l'avancement réel par rapport au plan
+.analyse et concep:prioriser les tests
+.implm et exe : enreg les rslt des exe|signaler les def.
+.cloture : créer un rapport synthese.
+
++act de test  et son produit:
+
+act de plan -> plan de test
+act de control -> rapport d'avacement
+act d'analyse -> charte de test
+act concep -> cas de test
+act d'implémentation -> procedures de test
+act cloture -> rapports  de synthese
+
+----------------------------------------------------------------------------------------
+la traçabilité facilite : - l'audit des test
+                                    - l'amelioration du caratère compréhensible des rapports
+                                      de test
+                                   - l'apport d'info pour evaluer la qualité du produit
+-----------------------------------------------------------------------------------------
+*psychologie des tests:
+
+etats d'esprit des testeurs vs dev:
+.objectif du dev :construire un prod
+.objectif du testeur: verifcation et la validation de prod,dec des defauts
+
+le testeur doit avoir de bonnes compétences interpersonnels.
+les moyens pour bien communiquer:
+-collaboration plutot que confrontation
+-communiquer les resultats des test d'une maniere neutre.
