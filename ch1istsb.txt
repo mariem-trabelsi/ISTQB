@@ -1,3 +1,12 @@
+
+Remarque:
+J'ai fait ces petits résumés durant ma formation ISTQB,
+à l'institut supérieur des technologies de l'information et de la communication. 
+
+
+
+
+
 *pourqoui on teste ?
 
 +securité des personnes

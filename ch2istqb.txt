@@ -1,0 +1,190 @@
+ch2:     
+ * Les modèles de dev log
+ *Les niveaux de tests
+*Les types de test
+*Test de maintenance
+
+*bonne pratique de test:
+-chaque activité de développement, il ya une activité de test correspondante.
+-chaque niveau de test a des objectifs spécifiques.
+-quel que soit le modele de dev choisi,les tests doivent commencer,
+dès les 1ers etapes  (principe "tester tot").
+---------------------------------------------------------------------------------
++le choix du modèle de cycle de développement se fait selon:
+.objectif du projet
+.type de projet
+.risques produit
+-------------------------------------------------------------------------------------
+* le modèle de développement "en cascade":
+-> décrit le processus de développementcomme un flux linéaire et séquentiel.
+=> toute phase devrait commencer lorsque la précédente est terminée.
+ 
+*le modèle de développement"en v":
+-> Il intègre le processus de test tout au long du processus de dev
+(contrairement au modele en cascade)
+-> inclut des niveaux de test à chaque phase de dev
+
+*le modèle de développement itératif :
+-> les iérations peuvent imliquer des changements sur les itérations précédentes
+
+****  les modèles de développement en contexte:
+-> combiner et réorganiser les niveaux de test et les act de test
+-> meme les modeles de cycle de vie de dev peuvent etre combinés
+---------------------------------------------------------------------------------------------------
+*Avancement dans le développement:
+test: unitaire-> d'intégration->système->d'acceptation
+
+*ce qu'on veut tester:
+test: de bon fonctionnement-> de robustesse-> de performance
+
+*selectionner les tests:
+.test FONCTIONNEL (boite noire)
+.test STRUCTUREL boite blanche)
+---------------------------------------------------------------------------------------
+*************************Les NIVEAUX de test:
+
+A- test de COMPOSANT (= test unitaire)
+
+-> ce test est une procédure qui vérifie le bon fonctionnement d'une partie d'un logiciel = unité cible: methode et les classes
+les objets de test: composants,unités,classes,methodes,code.
+
++ les défauts courants au niveau du test de composant :
+-fonction incorrecte
+-code et logique incorrects
+
+B-test d'INTEGRATION:
+son but: 
+-valider que tous les composants (indépendants) fonctionnent bien ensemble.
+-vérifier la compatibilité avec l'environnement logiciel et matériel.
+
++intégration continue = fusion des tests unitaires + test d'intégrations
+. test d'intégration comporte 2 types:
+1-test de validité: 
+est ce que le nouveau module répond aux exigences lorsqu'on l'intégration dans le sys globale ?
+
+2-test de non-régression:
+l'intégration du nouveau module n'induit pas de modifications sur le terme:
+.fonctionnel: modification dans le comportement des modules existants.
+.non-fonctionnel: instabilité du système dans sa globalité.
+
+*cible: les composants et le système global
+*les défauts courants:
+-défaillance dans la communication entre les composants.
+-décalages au niveau des interfaces ..
+
+C- test SYSTEME:
+-> tester le système sur son futur site d'exploitation suivant les conditions opérationnels.
+->on teste la fiabilté et la performance de l'ensemble de système.
+->s'assurer que le système complet matériel et logiciel. 
+cible: le système global (artchitecture client)
+* le test système s'oriente vers les spécifications non fonctionnelles.
+   - test de stress: 
+   -test de perforamce: temps de calcul
+   -test d'utlilisabilté: UX
+*défauts courants:
+-calcul incorrect
+-incapacité du système à fct normalement.
+-comportement  fonctionnel et non-fonctionnel incorrect.
+
+4-test d'ACCEPTATION: UAT (user acceptance, recette client )
+ces test sont formalisés par le client .
+-> eurreurs de validation et non de vérifivation
+--------------------------------------------------------------------------------------- 
+****************** les TYPES de test:
+1/  TEST BOITE NOIRE:  on ne touche pas au code source.
+
+a-test fonctionnel:
+
+-> verifier BD, les API,securite et les fonctionalité du système.
+(manuel|automatisé)
+
+b-test non-fonctionnel:
+
+-test de performance:temps d'exécution ,flux de données,..
+-test de sécurité : controle d'accés,...
+
+2/TEST BOITE BLANCHE: les testeurs accedent au code source afin:
+-s'assurer condition d'arret ou de boucle infini,..
+-toutes les branches conditionnelles ont été testés.
+-tester les structures de données (validation).
+
+3/TEST LIES AU CHANGEMENT:
+a/test de confiramation:
+tester apres la correction d'un defaut afin de confirmer que la défaillance causé par
+ce defauts ne se reproduira plus.
+
+b/test de regression:
+tester les composants qui ne sont directement touchés par une modif(effet second)
+------------------------------------------------------------------------------------------------
+une petite RECAP:
+*les niveaux de test ont pour but de décomposer un logiciel en 4 niveaux:
+niveau composannt:brique.
+niveau integration:ciment.
+niveau sys: construction.
+niveau acceptation:correspondance au besoin client.
+
+*chaque type de test a un but, peut couvrir sur un ou plusieurs niveaux de test.
+* les niveau de test  sont un moyen de structurer et oraganiser ses tests.
+*type de test x à quel nv de test se situe ?
+test regréssion -> tous les niveaux.
+test boites blanches  -> tous (mais niveau d'acceptattion généralemennt non)
+------------------------------------------------------------------------------------------------
+test de MAINTENANCE: 
+après le déploiement, le système doit etre maintenu soit:
+-défauts découvert par l'utlisation opérationnelle .
+-ajouter de nouvelles fonctionalités
+-suppression des onctionalités déja livrées
+-préserver les caractéristiques de qualité non-fonctionnel d'un composant ou d'un système.
+(perfermance|compatibilté|fiabilité ,..)
+
+* facteurs déclencheurs pour la maintenance:
+
+-améliorartion des versions de l'environnemnt (sys d'exploitation).
+-migration d'une plateforme à une autre.
+-déclassement (fin de vie d'une app).
+
+*l'analyse d'impact pour la maintenance:
+-évalue les changements apportés par une version de maintenance,
+afin d'identifier les effets second et les zones de système affectés.
+-cet analyse d'impact peut etre effectué avant qu'un changement soit apporté.
+
+*l'analyse d'impact peut etre difficile:
+-les spécifications sonr obselètes.
+-les cas de test ne sont pas documenté(ou mal annotés).
+-la traçacbilté n'était pas maintenue.
+-outillage faible.
+- ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
