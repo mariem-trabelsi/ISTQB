@@ -1,0 +1,162 @@
+                                                                                ch3: Tests statiques
+
+
+- les revues et les tests statiques permet de :relire la documentation et le code source , afin de détecter des défauts.
+- les tests dynamiques sont réalisés sur un logiciel en cours d'exécution.
+-tous les produits d'activités peuvent etre examinés à l'aide des tests statiques:
+. testware: plan de test, cas de test, pocédures de test ..
+. le code
+.guide utilisateur
+.les contrats
+.plan de projet
+.modèles : diagramme d'activité
+
+ 
++ les avantages des tests statiques:
+.appliqué tot : detecter en amont des défauts avant l'éxécution (backlog)
+.moins couteux surtout en comparaison des défauts trouvés après le déploiement et l'utilsation opérationnelle de logiciel.
+.augmenter la productivité du développement. 
+.améliorer la communication entre les membres de l'équipe.
+.beaucoup de moins effort  .
+=> les tests statiques et dynamiques se complètent en trouvant différents types de défauts.
+=> tests statiques améliorent la qualité des produits d'activité tandis que les tests dynamiques se concentrent sur les comportements visible de l'extérieur.
+- les tests statiques :
+* défauts dans les exigences.
+*défauts dans la conception.
+*défauts dans le code.
+*spécification des interfaces incorrect.
+*vulnérabilités de sécurité.
+*lacunes dans la traçabilité ou couverture des bases de tests:des tests manquants ..
+
+Revues
+.revue informelle:pas de processus défini à suivre,pas de documaentation.
+.revue formelle:la documentation des résultats et des procédures.
++ Le processus de revue:
+
+*plannification:
+
+-> définir le périmètre :
+-le but, les documents à revoir,le temps requis,les personnes ,les critères d'entrées et de sorties pour les revues formelles 
+
+*revue individuelle:
+
+*communication et analyse de des problèmes
+ 
+* correction et production de rapports:
+- vérifier les critères de sorties et accepter par la suite le produits d'activité
+
+Roles dans une revue formelle:
+* Auteur:
+-> crée le produit d'activité
+* Manager:
+-> affecte le personnel,
+-> budget et le temps, plannifie la revue.
+-> vérifie le rapport cout-efficacité
+* Facilitateur(modérateur)
+-> assure le bon déroulement des réunions
+-> fait la médiation
+-> c'est la personne dont dépend le succès de la revue
+*Responsable de revue:
+-> prend la responsabilité générale de la revue.
+-> quand et ou aura lieu.
+*Réviseur:
+-> experts (compétents): 
+-identifier les défauts potentiels,
+-ils peuvent repésenter différents perspectives(testeur,devéloppeur,user,opérateur,..)
+*Scribe (rapporteur):
+-> recueille les défauts  
+-> enregistre les nouveaux défauts  .
+
+Types de revues:
+
+ * revue informelle (en binome,collègue)
+
+- pas de formalité
+- couramment utilisé (dev agile).
+-pas de réunions.
+
+* relecture technique:
+-réunion de revue (facultative) dirigé par l'auteur de prod d'act 
+produire les rapports de défauts et les rapports de revue
+- formel
+
+*inspection:
+->suit un processus , résutalts documentés , basés sur des rrègles et des checklists
+->scribe est obligatoire
+=> un meme produit d'activité peut faire l'objet de plus d'un type de revues
+
+*Exemples de différents techniques :
+.adhoc
+.checklist
+.role 
+.perspectives => la tech la plus efficace.
+
+Facteurs de réussite des revues:
+.chaque revue a un objectif clair
+.temps suffisant
+. des facteurs liés aux participants:
+- objectivité
+-bonnes personnes
+- birn gérer les réunions 
+-culture de l'apprentissage 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
