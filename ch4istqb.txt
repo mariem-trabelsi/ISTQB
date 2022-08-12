@@ -1,0 +1,189 @@
+                                                     
+                                                                                                               Les techniques  de test
+
+
+
+ catégories de technique de test:
+
+ .Une technique de test aide à identifier :
+->les conditions de test,
+->les cas de test,
+->es données de test.
+
+ .Choix des techniques dépend:
+*type de composant,
+*type et niveau de risque,
+*Conditions contractuelle:
+-exigence de client
+-objectif de test,
+-temps et budget,
+-outils disponibles,
+-documentation disponible.
+
+-> certaines techniques sont applicables à certains niveaux de test, d'autres
+sont applicables à tous les niveaux des tests.
+-> utlisation des tech de test, conception et l'implémentation des tests varie de informel à très informel.
+
+ .Catégories de techniques de test :
+
+A- tech boite-noir: (technique comportementale):
+s'applique aux tests :  fonctionnels ou non-fonctionnels.
+il se concentre sur les entrées et les sorties de l'objet (sans se soucier à la structure interne).
+
+B-tech-boite blanche:( technique structurelle):
+il se concentre sur la structure du traitement à l'intérieur de l'objet.
+
+C-tech de test basée sur l'expérience : 
+c'est une combinaision entre les techniques de test boite-noir et boite blanche.
+
+* tech de test boite noire
+
+-1-Partitions d'équivalence: (classe d'equivalence)
+
+-chaque valeur appartient à une et une seule partition.
+objectif: réduire nombre de cas de test
+pas possible de tout tester,
+=> grouper l'élément de test en classe ou tous les elements dans chaque classe se comporte de la meme façon.
+=> En sélectionnant dans chaque partition une valeur représentative,la couverture de tous les elements de la meme partition est assurée.
+
+-les partitions peuvent etre identifiées pour tout élément de données lié à l'objet de test: 
+les entrées, les sorties, les valeurs liés au temps (event ), les paramètres d'interface.
+
+-valeurs valides : sonts qui doivent etre acceptés par le composant ou le système
+=> une partition contenant des valeurs valides dite :
+ "partition d'equivalence valide"
+-valeurs invalides: 
+sonts qui doivent etre rejetés par le composant ou le système.
+=> une partition contenant des valeurs valides dite :
+ "partition d'equivalence invalide"
+.entrées invalide -> sortie invalide
+.entrées valide -> sortie valide
+
+-2- Analyse des valeurs limites: (extension des partitions d'équivalence)
+
+->elle ne peut etre utilisée que la partition est ordonnée, composés par des données numériques ou séquentielles.
+-> le test aux limites: est une technique permet de choisir une valeur
+précise parmi une classe d'équivalence .
+- les valeurs min et max ( 1ere et derniere) d'une partition sont ses valeurs limites.
+
+-3- Test de tables de décision:
+->elle est utilisée pour tester les interactions entre des combinaisons de  conditions.
+->test de tables de décision fait partie des techniques de test combinatoires .
+=> le but de tester par la tables de décision: 
+ - assurer que toutes les conditions sont testées
+
+-> on a recours au test par table de décision réduite car tout tester , rend la table de décision devient tres grande.
+-test par la table de décision réduite (tous les tests redondants, irréalistes sont 
+supprimés)
+
+-4- Test de transitions d'état:
+
+-> permet de tester la capacité d'un système à entrer des états définis et à en sortir par des transitions valides et invalides.
+passage d'un etat à un autre se fait grace à des evenements.
+-> cette tech particulièrement conseillée dans:
+logiciel embarqués,
+logiciel web,
+logiciels trasactionnels,
+tout logiciel peut etre modélisé en diagramme de transition d'état.
+
+-5- Test des cas d'utlisation:
+-> il se base sur les scénarios
+- les tests d'utilisation servent de base pour les tests de performances.
+pour mettre en oeuvres cette tech: y a étapes:
+-analyser la base de test
+-identifier les acteurs
+-construire un diag au besoin
+-dériver les cas de test
+-identifier le jeu de données pour chaque cas de test.
+
+* tech de test boite blanche:
+
+- il est basée sur la structure interne de l'objet de test.
+- utilisé à tous les niveaux.
+-informel
+- comme le nombre  de chemin d'exécution est infini,on va :
+=> définir des critères de couverture.
+critère de chemin= quels sont les chemins d'exécution à tester afin de couvrir
+le plus de comportement du sys
+-les comportements sont définis sur le graphe de flot :
+flot de controle:instruction, branches,chemin
+flot de données: les variables
+*flot de controle:
+. tous les noeuds: -> couvertures des instructions  (le plus faible)
+.tous les arcs :   -> couverture des branchements
+. tous les chemins: -> couverture exhaustive (le plus fort)
+
++test et couverture des instructions:
+une insctruction = la plus petite unité indivisible d'éxécution
+les instructions conditionnelles: if, switch,for, while.
+
++test et couverture des décisions:
+
++Apport des test des instructions et des décisions
+les tests des instructions peut fournir une couverture de code moindre
+ que les tests des décisions.
+
+
+* tech de test  basées sur l'expérience:
+-il se base sur la compétence et l'intuition du testeur
+- n'est pas mésurable
+
++ estimaton des eurreurs:
+-> anticiper les eurreurs, défaillances
+c'est une approche méthodique qui consiste à créer une liste des eurreurs.
+ +test exploratoires:
+le testeur utlise une charte  de test comprenant les objectifs de test (guide)
+- il est utile lorsqu'il y a eu peu de spécification ou contraintes de temps
+=> les test exploratoires complète d'autres techniques de test plus formelles.
+
++test basé sur des cheklists:
+-> au cours de l'analyse, le testeur crée une nouvelle checklist ou complète une checklist existante
+- de telles cheklist sont construits sur la base de l'expérience, de la connaissance de ce qui est important pour le user (compréhension)
+
+=> formel : liste de haut niveau-> plus grande couverture-> reproductibilité plus faible
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
