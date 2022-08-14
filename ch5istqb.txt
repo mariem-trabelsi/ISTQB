@@ -1,0 +1,97 @@
+
+                                                                                                                        Risques et tests:
+
+le risque implique la possibilité d'un évènement futur qui a des conséquances négatives .
+le niveau de risque est déterminé par la probabilté de lévènement et  son imapact.
+
+* RISQUES PRODUIT :
+
+Risques produit ===  Risque qualité (si sont associé à des caractéristiques de qualité..).
+implique la possibilté qu'un produit  d'activité  ne pas satisfaire les besoins des users/partie prenante.
+-> des exemples:
+Logiciel ne peut remplir les fonctions selon la spécification.
+une architecture système ne répond pas à certaines exigences non fonctionelle.
+
+* RISQUES PROJET:
+
+A.problèmes liés au projet:
+
+.estimations erronées.
+.financement inadéquat .
+.conflit intrapersonnel.
+.priorités contradictoires (personnels métiers..users..).
+
+B.problèmes organisationnels:
+.compétence,formation,nombre du personnel insufifsants,..
+
+C. problèmes politiques:
+les testeurs ne peuvent pas communiquer leurs besoins,ou leurs résultats.
+
+D.problèmes techniques:
+.les exigence ne sont pas bien définies
+.les exigences ne peuvent pas  satisfaites (à cause des contraintes)
+
+E.problèmes  liés aux fournisseurs:
+un tier ne pas livrer un produit ou un service, ou fait faillite
+des problèmes contractuels .
+
+*Test basé sur les risques et qualité du produit:
+-> le risque utilisé pour orienter l'effort du test . 
+-> identifier le domaine qui nécessite plus de vigilance
+-> les tests utilisés  comme activité d'atténutaion des risques. 
+-> l'analyse précoce des risques contribue au succès.
+. une approche de test basé sur les risque offre possibilté de réduire niveau de risques,  elle comprend:
+-> identifier et analyser les risque produits.
+->évaluer probabilté et l'impact de chaque risque
+=> l'information sur les risques aide  à guider la planification,spécification,préparation,l'exécution  des cas de test.
+*Dans une approche basée sur les risques,les res de l'analyse de risque sont utilisés:
+.set tech de test.
+.déterminer niveau et type de test.
+.déterminer volume des test à faire.
+.prioriser les test.
+
+*Gestion des défauts:
+-> les defauts trouvés doivent etre enregistrés.
+-> tout défaut doit faire l'objet d'une anlyse et de suivi jusqu'à sa résolution.
+-> l'enregistrement des défauts peut etre informel.
+
+*FAUX POSITIFS:
+exemple: à cause d'une connexion réseau,temps de réponse est long, ...
+=> faux positifs: ne sont pas dus aux défauts réels.
+.les testeurs doit minimiser le nombre de faux positifs comme étant des défauts.
+
++ RAPPORT DE DEFFAUT:
+ les bugs sont rapportés pendant le codage,l'analyse statique ,revues,test dynamique,utilisation d'un produit de logiciel.
+*L'OBJECTIF des rapport de défauts:
+-> fournir de l'information  aux intervenants pour les corriger.
+
+
+.Rapport des défauts :test dynamiques 
+comprend:
+Id, titre, résumé, date, Id de l'élément testé,résultat attendu et  celui obtenu, la portée, descendance de défauts, ...
+
+.Rapport des défauts :test statiques 
+ Au cours des tests statiques, les défauts  sont documentés autrement dans les notes de rèunion (par exemple).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
